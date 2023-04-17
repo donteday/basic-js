@@ -15,26 +15,28 @@ const { NotImplementedError } = require('../extensions/index.js');
 class DepthCalculator {
   
   calculateDepth(a) {
-    //let r = calculateDepth(a);
-    let count = 1;
-    let maxCount = 1;
+    throw new NotImplementedError('Not implemented');
+  //   //let r = calculateDepth(a);
+  //   let count = 1;
+  //   let maxCount = 1;
 
-    function deepCountInner(a){    
-      for (let arr of a) {
-        if (Array.isArray(arr) === true) {
-          count ++;
-          if (arr.length === 0 || arr.length === 1 && Array.isArray(arr[0]) === false) {
-            count > maxCount ? maxCount = count : maxCount = maxCount;
-            count = 1;
-          };
-          deepCountInner(arr);
-        }
+  //   function deepCountInner(a){    
+  //     for (let arr of a) {
+  //       if (Array.isArray(arr) === true) {
+  //         count ++;
+  //         if (arr.length === 0 || arr.length === 1 && Array.isArray(arr[0]) === false) {
+  //           count > maxCount ? maxCount = count : maxCount = maxCount;
+  //           count = 1;
+  //         };
+  //         deepCountInner(arr);
+  //       }
 
-      }
-    }
-  deepCountInner(a);
-  return maxCount;
-  }
+  //     }
+  //   }
+  // deepCountInner(a);
+  // return maxCount;
+  // }
+}
 }
 
 module.exports = {
